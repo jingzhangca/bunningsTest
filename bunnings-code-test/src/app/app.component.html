@@ -1,0 +1,17 @@
+<div>
+  <table>
+    <tr>
+      <th>SKU</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+    <ng-container *ngFor="let product of outputProducts">
+      <tr>
+        <td>{{product.SKU}}</td>
+        <td>{{product.Description}}</td>
+        <td>{{product.Source}}</td>
+      </tr>
+    </ng-container>
+  </table>
+  <button (click)="handleButtonclick()">Download output</button>
+</div>
